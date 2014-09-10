@@ -61,7 +61,7 @@ answer_phone("Logan")
 
 ```ruby
 def answer_phone(adjective, name)
-  puts "Hello, it is a #{adjective} day at Flatiron School. this is #{name} speaking."
+  puts "Hello, it is a #{adjective} day at Flatiron School. This is #{name} speaking."
 end
 
 answer_phone("beautiful", "Arel")
