@@ -67,4 +67,4 @@ end
 answer_phone("beautiful", "Arel")
 answer_phone("wonderful", "Logan")
 ```
-The code above will print "Hello, it is a beautiful day at Flatiron School. This is Arel speaking." and then will print "Hello, it is a beautiful day at Flatiron School. This is Logan speaking."
+The code above will print "Hello, it is a beautiful day at Flatiron School. This is Arel speaking." and then will print "Hello, it is a wonderful day at Flatiron School. This is Logan speaking."
