@@ -15,7 +15,7 @@ lesson: defining, calling, scope, arguments
 * To make a custom method, write `def`, short for define, and then the name that you want to call the method. When you are done with your method, finish with an `end`. 
 * To make a method run, you must call on it. To call on a method, you simply write the name of the method below it.
 
-### Example: No Arguments
+#### Example: No Arguments
 
 ```ruby
 def answer_phone
@@ -30,7 +30,7 @@ The code above will print "Hello? Arel speaking." when it is run.
 * Arguments make it easy to give methods information.
 * To pass one arguement to a method, you put parentheses after the name of the method. Within those parentheses, put the variable name that you want to call the info. 
 
-### Example: One Argument
+#### Example: One Argument
 * For instance:
 
 ```ruby
@@ -55,7 +55,7 @@ answer_phone("Logan")
 ```
 * When run, the code above will print "Hello, this is Arel.", just like the first method in this overview. It will then print "Hello, this is Logan." 
 
-### Example: Multiple Arguments
+#### Example: Multiple Arguments
 * If we want to pass multiple arguments to the method, we separate those arguments by commas when we define the method AND when we call on the method.
 * When defining the method, it helps to use descriptive words or phrases to describe what the order the method is expecting the arguments in.
 
