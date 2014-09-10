@@ -15,7 +15,7 @@ lesson: defining, calling, scope, arguments
 * To make a custom method, write `def`, short for define, and then the name that you want to call the method. When you are done with your method, finish with an `end`. 
 * To make a method run, you must call on it. To call on a method, you simply write the name of the method below it.
 
-## Example: No Arguments
+### Example: No Arguments
 
 ```ruby
 def answer_phone
