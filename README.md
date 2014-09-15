@@ -11,9 +11,39 @@ lesson: defining, calling, scope, arguments
 # Methods in Ruby
 
 ## Introduction
-* Methods are instructions and logic that are defined for programmers by Ruby, like `puts`, or that programmers define themselves.
-* To make a custom method, write `def`, short for define, and then the name that you want to call the method. When you are done with your method, finish with an `end`. 
+* Methods are instructions and logic that are defined for programmers by Ruby or that programmers define themselves. A commony seen method, especially when first learning Ruby, is `puts`. For instance, `puts "hello world"` will print "hello world" to the screen.
+* To make a custom method, write `def`, short for define, add a space, then type the name that you want to call the method. When you are done with your method, finish with an `end`. See the code below for a reference:
+
+```ruby
+# basic structure
+def method_name
+  # code
+end
+
+# basic example
+def say_hi
+  puts "hi"
+end
+
+```
 * To make a method run, you must call on it. To call on a method, you simply write the name of the method below it.
+
+```ruby
+def print_alphabet
+  puts "abcdefghijklmnopqrstuvwxyz"
+end
+```
+* The above code defines a method, `say_alphabet` tells Ruby to print the alphabet. This code "teaches" Ruby how to print the alphabet but they don't tell Ruby to actually do it. If we want Ruby to actually execute this code a print to the screen, we have to call on the method below it. We do this simply by writing the name of the method, in this case `print_alphabet`, anywhere below the `end` keyword.
+
+```ruby
+def print_alphabet
+  puts "abcdefghijklmnopqrstuvwxyz"
+end
+
+print_alphabet
+# abcdefghijklmnopqrstuvwxyz
+# => nil
+```
 
 #### Example: No Arguments
 
@@ -41,7 +71,7 @@ end
 answer_phone("Arel")
 answer_phone("Logan")
 ```
-* When run, the code above will print "Arel" and then  will print "Logan". We can see that this is more flexible than the code above becuase the name can change to be any string, instead of being hardcoded as Arel.
+* When run, the code above will print "Arel" and then  will print "Logan". We can see that this is more flexible than the code above because the name can change to be any string, instead of being hardcoded as Arel.
 
 * If we want the method answer_phone to print "Hello this is" followed by the value of name, which in the case above is Arel then Logan, we have to add a `#` symbol and wrap the variable in brackets, see below.
 
