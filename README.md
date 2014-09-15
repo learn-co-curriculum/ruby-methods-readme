@@ -33,7 +33,7 @@ def print_alphabet
   puts "abcdefghijklmnopqrstuvwxyz"
 end
 ```
-* The above code defines a method, `say_alphabet` tells Ruby to print the alphabet. This code "teaches" Ruby how to print the alphabet but they don't tell Ruby to actually do it. If we want Ruby to actually execute this code a print to the screen, we have to call on the method below it. We do this simply by writing the name of the method, in this case `print_alphabet`, anywhere below the `end` keyword.
+* The above code defines a method, `say_alphabet`. This method essentially "teaches" Ruby how to print the alphabet but, on its own, it doesn't tell Ruby to actually do it. If we want Ruby to actually execute this code a print "abcd.." to the screen, we have to call on the method below. We do this simply by writing the name of the method, in this case `print_alphabet`, anywhere below the `end` keyword. See the example below:
 
 ```ruby
 def print_alphabet
