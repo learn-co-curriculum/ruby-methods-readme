@@ -33,7 +33,7 @@ def print_alphabet
   puts "abcdefghijklmnopqrstuvwxyz"
 end
 ```
-* The above code defines a method, `say_alphabet`. This method essentially "teaches" Ruby how to print the alphabet but, on its own, it doesn't tell Ruby to actually do it. If we want Ruby to actually execute this code a print "abcd.." to the screen, we have to call on the method below. We do this simply by writing the name of the method, in this case `print_alphabet`, anywhere below the `end` keyword. See the example below:
+* The above code defines a method, `print_alphabet`. This method essentially "teaches" Ruby how to print the alphabet but, on its own, it doesn't tell Ruby to actually do it. If we want Ruby to actually execute this code a print "abcd.." to the screen, we have to call on the method below. We do this simply by writing the name of the method, in this case `print_alphabet`, anywhere below the `end` keyword. See the example below:
 
 ```ruby
 def print_alphabet
@@ -58,7 +58,7 @@ The code above will print "Hello? Arel speaking." when it is run.
 
 ## Arguments
 * Arguments make it easy to give methods information.
-* To pass one arguement to a method, you put parentheses after the name of the method. Within those parentheses, put the variable name that you want to call the info. 
+* To pass one argument to a method, you put parentheses after the name of the method. Within those parentheses, put the variable name that you want to call the info. 
 
 #### Example: One Argument
 * For instance:
