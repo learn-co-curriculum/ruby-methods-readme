@@ -605,7 +605,7 @@ end
 say_x_times(10)
 # > Will print "Hello" 10 times.
 # Since x is required and phrased is optional, ruby assumes that 10 is the
-# value for the required argument, x, and not the optional argument, prhase.
+# value for the required argument, x, and not the optional argument, phrase.
 
 say_x_times("I can code", 10)
 # > Will print "I can code" 10 times.
