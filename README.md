@@ -240,7 +240,7 @@ def count_from_one_to_ten
   1.upto(10) do |i| # Opens the loop for all number between 1 and 10
     # Don't worry about the line above, just know that the next line 
     # executes once for every number between 1 and 10, with i being
-    # equal of the current number on every loop.    
+    # equal to the current number or iteration on every loop (1,2,3,etc).    
     puts i
 
   end # This ends the loop's block.
