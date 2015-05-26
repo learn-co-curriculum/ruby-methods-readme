@@ -615,34 +615,4 @@ say_x_times
 # Calling the method with no arguments raises an error. 
 ```
 
-
-
-
-
-```
-
-
-def say_times(phrase = "Hello", x = 10)
-  x.times do 
-    puts phrase
-  end
-end
-``
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+That's really it. We've covered how to define a method, how to add arguments, how to make arguments optional by providing a default value, and how to use the arguments within the method.
