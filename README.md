@@ -146,6 +146,7 @@ Then you can easily define the body of the method and never worry about forgetti
 def greeting
   puts "Hello World" # Now code the body of the method.
 end
+```
 
 ### 3. Evoking a Method
 
