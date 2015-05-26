@@ -426,7 +426,7 @@ count_from_to(10, 100)
 # Will count from 10 to 100
 
 count_from_to
-# Will raise an ArgumentError: wrong number of arguments for (1..2)
+# Will raise an ArgumentError: wrong number of arguments (0 for 1..2)
 ```
 
 With default arguments our once simple machine becomes profoundly useful and abstract:
@@ -608,7 +608,7 @@ say_x_times(10)
 # value for the required argument, x, and not the optional argument, prhase.
 
 say_x_times("I can code", 10)
-# > Will print "Ican code" 10 times.
+# > Will print "I can code" 10 times.
 
 say_x_times
 # > ArgumentError: wrong number of arguments (0 for 1..2)
