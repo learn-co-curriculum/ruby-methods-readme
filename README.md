@@ -18,7 +18,6 @@ lesson: defining, calling, scope, arguments
 4. Understand the purpose of supplying a method with arguments.
 5. Define methods that accept arguments.
 6. Use a method's arguments within the body of the method.
-7. 
 
 ## Video
 
