@@ -18,6 +18,16 @@ lesson: defining, calling, scope, arguments
 4. Understand the purpose of supplying a method with arguments.
 5. Define methods that accept arguments.
 6. Use a method's arguments within the body of the method.
+7. 
+
+## Video
+
+<video controls width="100%">
+  <source src="http://learn-co-videos.s3.amazonaws.com/ruby/introduction-to-methods-and-arguments-ruby.mp4" type="video/mp4" >
+    The video accompanying this lab is best enjoyed on Learn.co
+</video>
+
+[MP4](http://learn-co-videos.s3.amazonaws.com/ruby/introduction-to-methods-and-arguments-ruby.mp4)
 
 ### 1. Introduction to Methods
 
