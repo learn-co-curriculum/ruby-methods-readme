@@ -1,13 +1,3 @@
----
-tags: readme
-language: ruby
-resources: 0
-track: web development
-topic: ruby
-unit: methods
-lesson: defining, calling, scope, arguments
----
-
 # Methods in Ruby
 
 ## Objectives
