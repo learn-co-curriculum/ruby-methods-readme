@@ -227,4 +227,5 @@ $
 
 The bareword `greeting` will execute the body of the defined method.
 
+
 Next up, we'll learn how to pass information into methods via method arguments. 
