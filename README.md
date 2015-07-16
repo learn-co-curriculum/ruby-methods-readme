@@ -4,7 +4,7 @@
 
 1. Understand how methods can define new routines and procedures for our code.
 2. Define a method with the `def` keyword, supply the method's body, and close the method definition with the `end` keyword.
-3. Evoke a method by calling it by name.
+3. Invoke a method by calling it by name.
 
 ## Video
 
@@ -17,9 +17,9 @@
 
 ### 1. Introduction to Methods
 
-Methods define a new thing your program can do. Variables are a mechanism to teach your Ruby program about data. Methods teach your Ruby program about a new routine or behavior it can use.
+Methods define a new thing that your program can do. Variables are a mechanism to teach your Ruby program about data; methods teach your Ruby program about a new routine or behavior it can use. Variables are like nouns, methods are like verbs.
 
-For example, imagine needing to say "Hello World!" ten times. You might do something like:
+For example, imagine needing to say "Hello World!" ten times. You might do something like this:
 
 ```ruby
 phrase = "Hello World!"
@@ -35,9 +35,9 @@ puts phrase
 puts phrase
 ```
 
-That works pretty well. You made use of a variable to encapsulate the data you wanted to print and then the next 10 lines literally print the phrase.
+That works pretty well. You made use of a variable to encapsulate the data you wanted to print and then the next ten lines literally print the phrase.
 
-Now imagine later in your program you again want to say "Hello World!" ten times. The entire program would look something like:
+Now imagine later in your program you again want to say "Hello World!" ten times. The entire program would look something like this:
 
 ```ruby
 phrase = "Hello World!"
@@ -66,9 +66,9 @@ puts phrase
 puts phrase
 ```
 
-We have to repeat the literal procedure for printing the value of `phrase` ten times. If variables encapsulate and abstract data, methods encapsulate and abstract procedure. Instead of literally `puts phrase` ten times, we can instead build a method, a little machine that does exactly that whenever we want.
+We have to repeat the literal procedure for printing the value of `phrase` ten times. If variables encapsulate and abstract data, methods encapsulate and abstract procedure. Instead of literally `puts phrase` ten times, we can instead build a method—a little machine that does exactly that whenever we want.
 
-The method would look like:
+The method would look like this:
 
 ```ruby
 def say_hello_world_ten_times
@@ -85,8 +85,7 @@ def say_hello_world_ten_times
   puts phrase
 end
 ```
-
-Now when we use the bareword `say_hello_world_ten_times` in our program, it will evoke the method, running the code within the method. So the script above, saying hello ten times, doing other things, then saying hello ten times again could be rewritten as:
+Now, when we use the bareword `say_hello_world_ten_times` in our program, it will invoke the method, running the code within the method. So the script above, saying hello ten times, doing other things, then saying hello ten times again could be rewritten as this:
 
 ```ruby
 def say_hello_world_ten_times
@@ -110,7 +109,7 @@ say_hello_world_ten_times
 say_hello_world_ten_times
 ```
 
-That's way cleaner. We define the abstraction, or the machine, `say_hello_world_ten_times` once, but can call it or evoke it, make it run, as many times as we want. Let's look at methods in greater detail.
+That's way cleaner. We define the abstraction, or the machine, `say_hello_world_ten_times` once, but can "call" or "invoke" it—make it run—as many times as we want. Let's look at methods in greater detail.
 
 ### 2. Defining a Method
 
@@ -134,7 +133,7 @@ def greeting
 end # Immediately close the method.
 ```
 
-Here we setup the method's structure first, ensuring a proper termination, before adding any other complexity. It's also a great practice to indent methods correctly. The body of a method should be indented 2 spaces, placing it visually within the method. When you `end` the method, go back to the same indentation of the `def`, aligning the opening and closing of the method visually.
+Here we set up the method's structure first, ensuring a proper termination before adding any other complexity. It's also a great practice to indent methods correctly. The body of a method should be indented two (2) spaces, placing it visually within the method. When you `end` the method, go back to the same indentation of the `def`, aligning the opening and closing of the method visually.
 
 Then you can easily define the body of the method and never worry about forgetting to `end` the method.
 
@@ -144,7 +143,7 @@ def greeting
 end
 ```
 
-### 3. Evoking a Method
+### 3. Invoking a Method
 
 Once you define a method, you can execute the method whenever you want by using the method name in your code.
 
@@ -172,12 +171,12 @@ end
 
 Save your file and run it with `ruby greeting.rb`. You'll see:
 
-```
+```bash
 $ ruby greeting.rb
 $
 ```
 
-You'll notice that when you run your program, nothing happens. Your program successfully defined the method but it never executed it. Just because you built a machine doesn't mean you turned it on. Update your `greeting.rb` to entirely read:
+You'll notice that when you run your program, nothing happens. Your program successfully defined the method but it never executed it. Just because you built a machine doesn't mean that you turned it on. Update your `greeting.rb` to entirely read:
 
 File: `greeting.rb`
 
@@ -191,7 +190,7 @@ greeting
 
 Save your file and run it with `ruby greeting.rb`. You'll see:
 
-```
+```bash
 $ ruby greeting.rb
 Hello World
 $
@@ -215,7 +214,7 @@ greeting
 
 Save your file and run it with `ruby greeting.rb`. You'll see:
 
-```
+```bash
 $ ruby greeting.rb
 Hello World
 Hello World
@@ -228,4 +227,4 @@ $
 The bareword `greeting` will execute the body of the defined method.
 
 
-Next up, we'll learn how to pass information into methods via method arguments. 
+Next up, we'll learn how to pass information into methods using method arguments. 
