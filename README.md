@@ -252,11 +252,9 @@ end
 ~~~validation
 
 assert_equal(response, "The Flatiron School")
-
 ~~~
 
 %%%
-
 
 ## Code Challenge II: defining a method that does math
 
@@ -277,7 +275,6 @@ end
 ~~~validation
 
 assert_equal(response, 10)
-
 ~~~
 
 %%%
