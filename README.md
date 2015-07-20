@@ -227,4 +227,57 @@ $
 The bareword `greeting` will execute the body of the defined method.
 
 
-Next up, we'll learn how to pass information into methods using method arguments. 
+Next up, we'll learn how to pass information into methods using method arguments. But first, it's your turn to define and invoke a method!
+
+%%%
+
+## Code Challenge I: defining a method that returns a string
+
+Define a method called `best_coding_school` that returns the phrase "The Flatiron School". Then, invoke the method by simply typing the method name, `best_coding_school`.
+
+**Reminder:** The `puts` method returns `nil`. This method shouldn't use the `puts` method to output the desired phrase. Instead, the method itself should return the phrase. 
+
+~~~ruby
+
+// code your method definition here!
+
+// invoke your method here!
+
+~~~solution
+
+def best_coding_school
+   "The Flatiron School"
+end
+
+~~~validation
+
+assert_equal(response, "The Flatiron School")
+
+~~~
+
+%%%
+
+
+## Code Challenge II: defining a method that does math
+
+Define a method called `calculate_sum` that adds two numbers, `7` and `3` and returns their sum. Refer back to the earlier lesson on simple math if you get stuck. Then, invoke your method.
+
+~~~ruby
+
+// code your method definition here!
+
+// invoke your method here!
+
+~~~solution
+
+def calculate_sume
+   7 +  3
+end
+
+~~~validation
+
+assert_equal(response, 10)
+
+~~~
+
+%%%
