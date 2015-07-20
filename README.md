@@ -239,9 +239,9 @@ Define a method called `best_coding_school` that returns the phrase "The Flatiro
 
 ~~~ruby
 
-// code your method definition here!
+# code your method definition here!
 
-// invoke your method here!
+# invoke your method here!
 
 ~~~solution
 
@@ -267,9 +267,9 @@ Define a method called `calculate_sum` that adds two numbers, `7` and `3` and re
 
 ~~~ruby
 
-// code your method definition here!
+# code your method definition here!
 
-// invoke your method here!
+# invoke your method here!
 
 ~~~solution
 
