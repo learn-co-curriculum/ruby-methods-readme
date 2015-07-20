@@ -235,7 +235,7 @@ Next up, we'll learn how to pass information into methods using method arguments
 
 Define a method called `best_coding_school` that returns the phrase "The Flatiron School". Then, invoke the method by simply typing the method name, `best_coding_school`.
 
-**Reminder:** The `puts` method returns `nil`. This method shouldn't use the `puts` method to output the desired phrase. Instead, the method itself should return the phrase. 
+**A Note On Method Return Values:** We haven't discussed return values in-depth yet. That's coming up soon. For now, just understand that the return value of the method is whatever code is last evaluated in the method––i.e., the last line of the method. The `puts` method, however, returns `nil`. The `best_coding_school` method shouldn't use the `puts` method to output the desired phrase. Instead, the method itself should return the phrase. You can achieve this by simply typing the phrase, enclosed in quotes, within the method and leaving it at that. 
 
 ~~~ruby
 
