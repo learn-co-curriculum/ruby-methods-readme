@@ -249,6 +249,8 @@ def best_coding_school
    "The Flatiron School"
 end
 
+best_coding_school
+
 ~~~validation
 
 assert_equal(response, "The Flatiron School")
@@ -257,6 +259,7 @@ assert_equal(response, "The Flatiron School")
 
 %%%
 
+%%%
 
 ## Code Challenge II: defining a method that does math
 
@@ -270,9 +273,11 @@ Define a method called `calculate_sum` that adds two numbers, `7` and `3` and re
 
 ~~~solution
 
-def calculate_sume
+def calculate_sum
    7 +  3
 end
+
+calculate_sum 
 
 ~~~validation
 
