@@ -263,7 +263,9 @@ assert_equal(response, "The Flatiron School")
 
 ## Code Challenge II: defining a method that does math
 
-Define a method called `calculate_sum` that adds two numbers, `7` and `3` and returns their sum. Refer back to the earlier lesson on simple math if you get stuck. Then, invoke your method.
+Define a method called `calculate_sum` that adds two numbers, `7` and `3` and returns their sum. Then, invoke your method.
+
+**Top-Tip:** Ruby can do math! To add two numbers, just use the `+` or "addition operator" like this: `num1 + num2`. More on doing math in Ruby in the upcoming unit.
 
 ~~~ruby
 
