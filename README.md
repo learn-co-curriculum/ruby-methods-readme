@@ -241,7 +241,7 @@ Define a method called `best_coding_school` that returns the phrase "The Flatiro
 
 # code your method definition here!
 
-# invoke your method here!
+# invoke your method here! make sure the last line you type in this box is the invocation of the method.
 
 ~~~solution
 
@@ -271,7 +271,7 @@ Define a method called `calculate_sum` that adds two numbers, `7` and `3` and re
 
 # code your method definition here!
 
-# invoke your method here!
+# invoke your method here! make sure the last line you type in this box is the invocation of the method.
 
 ~~~solution
 
