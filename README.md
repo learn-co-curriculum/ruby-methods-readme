@@ -1,8 +1,12 @@
 # Methods in Ruby
 
+##Overview
+
+In this lesson, we'll introduce methods, distinguish them from data types, and cover how to create and execute them in your Ruby program. 
+
 ## Objectives
 
-1. Understand how methods can define new routines and procedures for our code.
+1. Describe how methods can define new routines and procedures for our code.
 2. Define a method with the `def` keyword, supply the method's body, and close the method definition with the `end` keyword.
 3. Invoke a method by calling it by name.
 
@@ -15,7 +19,7 @@
 
 [MP4](http://learn-co-videos.s3.amazonaws.com/ruby/introduction-to-methods-and-arguments-ruby.mp4)
 
-### 1. Introduction to Methods
+### Why Use Methods
 
 Methods define a new thing that your program can do. Variables are a mechanism to teach your Ruby program about data; methods teach your Ruby program about a new routine or behavior it can use. Variables are like nouns, methods are like verbs.
 
@@ -111,7 +115,7 @@ say_hello_world_ten_times
 
 That's way cleaner. We define the abstraction, or the machine, `say_hello_world_ten_times` once, but can "call" or "invoke" it—make it run—as many times as we want. Let's look at methods in greater detail.
 
-### 2. Defining a Method
+### Defining a Method
 
 You can define a method in Ruby with the `def` keyword. A method's name can begin with any lowercase letter. Here's a quick example:
 
@@ -143,7 +147,7 @@ def greeting
 end
 ```
 
-### 3. Invoking a Method
+### Invoking a Method
 
 Once you define a method, you can execute the method whenever you want by using the method name in your code.
 
@@ -227,7 +231,7 @@ $
 The bareword `greeting` will execute the body of the defined method.
 
 
-Next up, we'll learn how to pass information into methods using method arguments. But first, it's your turn to define and invoke a method!
+Now it's your turn to define and invoke a method!
 
 %%%
 
