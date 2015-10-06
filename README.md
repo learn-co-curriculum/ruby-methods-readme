@@ -2,7 +2,7 @@
 
 ##Overview
 
-In this lesson, we'll introduce methods, distinguish them from data types, and cover how to create and execute them in your Ruby program. 
+In this lesson, we'll introduce methods, distinguish them from data types, and cover how to create and execute them in your Ruby program.
 
 ## Objectives
 
@@ -12,12 +12,9 @@ In this lesson, we'll introduce methods, distinguish them from data types, and c
 
 ## Video
 
-<video controls width="100%">
-  <source src="http://learn-co-videos.s3.amazonaws.com/ruby/introduction-to-methods-and-arguments-ruby.mp4" type="video/mp4" >
-    The video accompanying this lab is best enjoyed on Learn.co
-</video>
+<iframe width="960" height="720" src="https://www.youtube.com/embed/mdAXgvQjnTE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-[MP4](http://learn-co-videos.s3.amazonaws.com/ruby/introduction-to-methods-and-arguments-ruby.mp4)
+[Download MP4](http://learn-co-videos.s3.amazonaws.com/ruby/introduction-to-methods-and-arguments-ruby.mp4)
 
 ### Why Use Methods
 
@@ -229,66 +226,3 @@ $
 ```
 
 The bareword `greeting` will execute the body of the defined method.
-
-
-Now it's your turn to define and invoke a method!
-
-%%%
-
-## Code Challenge I: defining a method that returns a string
-
-Define a method called `best_coding_school` that returns the phrase "The Flatiron School". Then, invoke the method by simply typing the method name, `best_coding_school`.
-
-**A Note On Method Return Values:** We haven't discussed return values in-depth yet. That's coming up soon. For now, just understand that the return value of the method is whatever code is last evaluated in the method––i.e., the last line of the method. The `puts` method, however, returns `nil`. The `best_coding_school` method shouldn't use the `puts` method to output the desired phrase. Instead, the method itself should return the phrase. You can achieve this by simply typing the phrase, enclosed in quotes, within the method and leaving it at that. 
-
-~~~ruby
-
-# code your method definition here!
-
-# invoke your method here! make sure the last line you type in this box is the invocation of the method.
-
-~~~solution
-
-def best_coding_school
-   "The Flatiron School"
-end
-
-best_coding_school
-
-~~~validation
-
-assert_equal(response, "The Flatiron School")
-
-~~~
-
-%%%
-
-%%%
-
-## Code Challenge II: defining a method that does math
-
-Define a method called `calculate_sum` that adds two numbers, `7` and `3` and returns their sum. Then, invoke your method.
-
-**Top-Tip:** Ruby can do math! To add two numbers, just use the `+` or "addition operator" like this: `num1 + num2`. More on doing math in Ruby in the upcoming unit.
-
-~~~ruby
-
-# code your method definition here!
-
-# invoke your method here! make sure the last line you type in this box is the invocation of the method.
-
-~~~solution
-
-def calculate_sum
-   7 +  3
-end
-
-calculate_sum 
-
-~~~validation
-
-assert_equal(response, 10)
-
-~~~
-
-%%%
