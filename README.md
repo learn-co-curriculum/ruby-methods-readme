@@ -226,3 +226,5 @@ $
 ```
 
 The bareword `greeting` will execute the body of the defined method.
+
+> Note: In subsequent lessons, you might see methods written with a `#` in front of the method name, such as `#greeting`. This is a Ruby convention for writing methods, and the actual method name (when you write it in your code) should be `greeting` and not `#greeting`.
