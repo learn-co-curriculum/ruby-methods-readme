@@ -226,3 +226,5 @@ $
 ```
 
 The bareword `greeting` will execute the body of the defined method.
+
+>BONUS tip! Programmers love conventions, or agreed upon rules that help programmers talk to each other about code. A common convention for Ruby methods is to preface the with a #. For example, if a method is named 'greeting', rubyists will often refer to it as '#greeting'. This is so that other rubyists can instantly recognize it as a method, as opposed to a variable or a bareword or a class. 
