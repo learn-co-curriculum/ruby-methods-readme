@@ -10,6 +10,9 @@ In this lesson, we'll introduce methods, distinguish them from data types, and c
 2. Define a method with the `def` keyword, supply the method's body, and close the method definition with the `end` keyword.
 3. Invoke a method by calling it by name.
 
+### Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/njJB-fuE-qE?rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe><p><a href="https://www.youtube.com/watch?v=njJB-fuE-qE">Introduction to Ruby Methods</a></p>
+
 ### Why Use Methods
 
 Methods define a new thing that your program can do. Variables are a mechanism to teach your Ruby program about data; methods teach your Ruby program about a new routine or behavior it can use. Variables are like nouns, methods are like verbs.
