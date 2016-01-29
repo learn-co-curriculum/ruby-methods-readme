@@ -226,4 +226,4 @@ The bareword `greeting` will execute the body of the defined method.
 
 > Note: Programmers love conventions, or agreed upon rules that help them talk to each other about code. A common convention for Ruby methods is to preface them with a #, and in subsequent lessons, you might see methods written with a `#` in front of the method name. This is so that other rubyists can instantly recognize it as a method, as opposed to a variable or a bareword or a class. For example, if a method is named 'greeting', rubyists will often refer to it as '#greeting'. But remember that when you write it in your code, it should be `greeting` and not `#greeting`.
 
-<a href='https://learn.co/lessons/ruby-methods-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-methods-readme' title='Methods in Ruby'>Methods in Ruby</a> on Learn.co and start learning to code for free.</p>
