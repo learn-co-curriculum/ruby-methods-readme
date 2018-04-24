@@ -15,8 +15,6 @@ In this lesson, we'll introduce methods, distinguish them from data types, and c
 
 ### Why Use Methods
 
-**HELLO**
-
 Methods define a new thing that your program can do. Variables are a mechanism to teach your Ruby program about data; methods teach your Ruby program about a new routine or behavior it can use. Variables are like nouns, methods are like verbs.
 
 For example, imagine needing to say "Hello World!" ten times. You might do something like this:
