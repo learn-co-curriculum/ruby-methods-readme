@@ -5,6 +5,11 @@
 In this lesson, we'll introduce methods, distinguish them from data types, and
 cover how to create and execute them in your Ruby program.
 
+You can follow along by running `IRB` in your terminal, either locally or in the
+[Sandbox][], then copying the provided code snippets.
+
+[Sandbox]: https://help.learn.co/en/articles/1862105-ide-in-browser-sandbox
+
 ## Objectives
 
 - Describe how methods can define new routines and procedures for our code.
@@ -122,7 +127,7 @@ say_hello_world_ten_times
 say_hello_world_ten_times
 ```
 
-That's way cleaner and follows the code principle "don't repeat yourself" or
+That's way cleaner and follows the code principle "Don't Repeat Yourself" or
 DRY. We abstract the action or procedure of putting "Hello World!" ten times
 into a method. By defining the method  `say_hello_world_ten_times` once, we can
 "call" or "invoke" the method as many times as we want in the future. Let's look
@@ -142,7 +147,7 @@ end # Method Closing
 That first line, `def greeting`, is called the method signature, it defines the
 basic properties of the method including the name of the method, `greeting`.
 
-Once you open a method definition with the `def` keyword, all subsequent lines
+Once you 'open' a method definition with the `def` keyword, all subsequent lines
 in your program are considered the method's body, the actual procedure or code
 that your method will run every time it's called.
 
@@ -159,14 +164,14 @@ end # Immediately close the method.
 ```
 
 Here we set up the method's structure first, ensuring a proper termination
-before adding any other complexity. It's also a great practice to indent methods
-correctly. The body of a method should be indented two (2) spaces, placing it
-visually within the method. When you `end` the method, go back to the same
-indentation of the `def`, aligning the opening and closing of the method
-visually.
+before adding any other complexity.
 
-Then you can easily define the body of the method and never worry about
-forgetting to `end` the method.
+> **Aside**: It's also a great practice to indent methods correctly. The body of
+> a method should be indented two (2) spaces, placing it visually within the
+> method. When you `end` the method, go back to the same indentation of the
+> `def`, aligning the opening and closing of the method visually. Then you can
+> easily define the body of the method and never worry about forgetting to `end`
+> the method.
 
 ```ruby
 def greeting
@@ -185,14 +190,14 @@ def greeting
 end
 
 greeting # Executing the method by name
-#> "Hello World"
+#=> "Hello World"
 
 greeting # Executing the method again
-#> "Hello World"
+#=> "Hello World"
 ```
 
 Try it out. Make a new file called `greeting.rb` (you can use: `touch
-greeting.rb` from your terminal). Put the following code in it:
+greeting.rb` from your terminal in the Sandbox). Put the following code in it:
 
 File: `greeting.rb`
 
@@ -265,6 +270,13 @@ The bareword `greeting` will execute the body of the defined method.
 
 #### Writing Code vs Reading About Code
 
-Programmers love conventions, or agreed upon rules that help them talk to each other about code. A common syntax convention for Ruby methods is to preface them with a `#`, and in subsequent lessons, you might see methods written with a `#` in front of the method name. For example, if a method is named 'greeting', rubyists will often refer to it as `#greeting`. This is so that other rubyists can instantly recognize it as a method, as opposed to a variable or a bareword or a class.  But remember that when you write it in your code, it should be `greeting` and not `#greeting`.
+Programmers love conventions, or agreed upon rules that help them talk to each
+other about code. A common syntax convention for Ruby methods is to preface them
+with a `#`, and in subsequent lessons, you might see methods written with a `#`
+in front of the method name. For example, if a method is named 'greeting',
+rubyists will often refer to it as `#greeting`. This is so that other rubyists
+can instantly recognize it as a method, as opposed to a variable or a bareword
+or a class.  But remember that when you write it in your code, it should be
+`greeting` and not `#greeting`.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-methods-readme' title='Methods in Ruby'>Methods in Ruby</a> on Learn.co and start learning to code for free.</p>
