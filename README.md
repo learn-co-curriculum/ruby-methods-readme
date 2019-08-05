@@ -5,10 +5,10 @@
 In this lesson, we'll introduce methods, distinguish them from data types, and
 cover how to create and execute them in your Ruby program.
 
-You can follow along by running `IRB` in your terminal, either locally or in the
-[Sandbox][], then copying the provided code snippets.
-
-[Sandbox]: https://help.learn.co/en/articles/1862105-ide-in-browser-sandbox
+You can follow along by running `IRB` in your terminal, then copying the
+provided code snippets. In the `lib` folder, there is also a file, `example.rb`
+that you can use to copy the code snippets into. You can run this file from the
+lesson's main directory by typing `ruby lib/example.rb`.
 
 ## Objectives
 
