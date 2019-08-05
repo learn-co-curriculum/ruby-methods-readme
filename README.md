@@ -5,10 +5,11 @@
 In this lesson, we'll introduce methods, distinguish them from data types, and
 cover how to create and execute them in your Ruby program.
 
-You can follow along by running `IRB` in your terminal, then copying the
-provided code snippets. In the `lib` folder, there is also a file, `example.rb`
-that you can use to copy the code snippets into. You can run this file from the
-lesson's main directory by typing `ruby lib/example.rb`.
+You can follow along using IRB by typing `irb` in your terminal and copying the
+provided code examples. Alternatively, in the `lib` folder, there is also a
+file, `example.rb`, that you can use to copy the code examples into. You can run
+this file from the lesson's main directory by typing `ruby lib/example.rb` to
+see what it produces.
 
 ## Objectives
 
@@ -196,8 +197,13 @@ greeting # Executing the method again
 #=> "Hello World"
 ```
 
-Try it out. Make a new file called `greeting.rb` (you can use: `touch
-greeting.rb` from your terminal in the Sandbox). Put the following code in it:
+> **Note**: If you have been using IRB so far, exit out of it before continuing.
+> The remaining portion of this lesson involves bash commands you will need to
+> enter into the terminal.
+
+Let's try making a method we can use over and over. Make a new file called
+`greeting.rb` (you can use: `touch greeting.rb` from your terminal). Put the
+following code in it:
 
 File: `greeting.rb`
 
