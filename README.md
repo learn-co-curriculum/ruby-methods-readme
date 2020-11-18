@@ -145,8 +145,11 @@ def greeting # Method Signature
 end # Method Closing
 ```
 
-That first line, `def greeting`, is called the method signature, it defines the
-basic properties of the method including the name of the method, `greeting`.
+> Note in the snippet above that we are using the `#` in a different way than we've seen before. Here we are using it to put comments inside our code. Ruby will see the `#` in the line of code without the rest of the syntax required for string interpolation, and will not interpret anything that follows. You can use `#` in this way to add comments or clarifications to your code, either at the end of a line of code as shown above or on a line by themselves. You can also use it to "comment out" code (by putting `#` at the beginning of each line) if you want to keep the code from executing temporarily. This can come in handy during debugging.
+
+The first line in the code snippet above, `def greeting`, is called the method
+signature, it defines the basic properties of the method including the name of
+the method, `greeting`.
 
 Once you 'open' a method definition with the `def` keyword, all subsequent lines
 in your program are considered the method's body, the actual procedure or code
