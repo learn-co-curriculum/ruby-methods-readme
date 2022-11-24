@@ -26,6 +26,29 @@ new routine or behavior it can use. Variables are like nouns, methods are like
 verbs.
 
 For example, imagine needing to say "Hello World!" ten times. You might do something like this:
+...............................................................................................
+Nesta lição, vamos introduzir métodos, diferenciá-los dos tipos de dados e
+cobre como criá-los e executá-los em seu programa Ruby.
+
+Você pode acompanhar usando o IRB digitando `irb` em seu terminal e copiando o
+exemplos de código fornecidos. Alternativamente, na pasta `lib`, há também um
+arquivo, `example.rb`, que você pode usar para copiar os exemplos de código. Você pode correr
+este arquivo do diretório principal da lição digitando `ruby lib/example.rb` para
+veja o que produz.
+
+## Objetivos
+
+- Descrever como os métodos podem definir novas rotinas e procedimentos para o nosso código.
+- Defina um método com a palavra-chave `def`, forneça o corpo do método e feche
+  a definição do método com a palavra-chave `end`.
+- Invoque um método chamando-o pelo nome.
+
+### Por que usar métodos
+
+Métodos definem uma coisa nova que seu programa pode fazer. As variáveis ​​são um mecanismo
+para ensinar seu programa Ruby sobre dados; métodos ensinam seu programa Ruby sobre um
+nova rotina ou comportamento que pode usar. Variáveis ​​são como substantivos, métodos são como
+verbos.
 
 ```ruby
 phrase = "Hello World!"
@@ -46,6 +69,12 @@ wanted to print and then the next ten lines literally print the phrase.
 
 Now imagine later in your program you again want to say "Hello World!" ten
 times. The entire program would look something like this:
+...............................................................................................
+Isso funciona muito bem. Você fez uso de uma variável para encapsular os dados que você
+queria imprimir e, em seguida, as próximas dez linhas literalmente imprimem a frase.
+
+Agora imagine que mais tarde em seu programa você queira dizer novamente "Hello World!" dez
+vezes. O programa inteiro ficaria mais ou menos assim:
 
 ```ruby
 phrase = "Hello World!"
@@ -80,6 +109,13 @@ abstract procedure. Instead of literally `puts phrase` ten times, we can instead
 build a method—a little machine that does exactly that whenever we want.
 
 The method would look like this:
+...............................................................................................
+Temos que repetir o procedimento literal para imprimir o valor de `frase` dez
+vezes. Se variáveis ​​encapsulam e abstraem dados, métodos encapsulam e
+procedimento abstrato. Em vez de literalmente 'coloca a frase' dez vezes, podemos
+construir um método - uma pequena máquina que faz exatamente isso sempre que queremos.
+
+O método ficaria assim:
 
 ```ruby
 def say_hello_world_ten_times
@@ -101,6 +137,11 @@ Now, when we use the bareword `say_hello_world_ten_times` in our program, it
 will invoke the method, running the code within the method. So the script above,
 saying hello ten times, doing other things, then saying hello ten times again
 could be rewritten as this:
+...............................................................................................
+Agora, quando usamos a palavra simples `say_hello_world_ten_times` em nosso programa,
+invocará o método, executando o código dentro do método. Portanto, o script acima,
+dizendo olá dez vezes, fazendo outras coisas, depois dizendo olá dez vezes novamente
+poderia ser reescrito assim:
 
 ```ruby
 def say_hello_world_ten_times
@@ -134,6 +175,17 @@ at methods in greater detail.
 
 You can define a method in Ruby with the `def` keyword. A method's name can
 begin with any lowercase letter. Here's a quick example:
+...............................................................................................
+Isso é muito mais limpo e segue o princípio do código "Don't Repeat Yourself" ou
+SECO. Abstraímos a ação ou procedimento de colocar "Hello World!" dez vezes
+em um método. Ao definir o método `say_hello_world_ten_times` uma vez, podemos
+"chamar" ou "invocar" o método quantas vezes quisermos no futuro. Vamos olhar
+em métodos em maior detalhe.
+
+### Definindo um Método
+
+Você pode definir um método em Ruby com a palavra-chave `def`. O nome de um método pode
+comece com qualquer letra minúscula. Aqui está um exemplo rápido:
 
 ```ruby
 def greeting # Method Signature
@@ -164,6 +216,30 @@ order to close the method body. If you don't correctly `end` a method, your
 program will have unexpected results or break entirely because of a syntax
 error. A good practice is to define the method and then immediately close it
 before programming anything into the method.
+...............................................................................................
+**Observação**: no trecho acima, estamos usando o `#` de uma maneira diferente da
+já vimos antes. Aqui estamos usando para colocar comentários dentro do nosso código. Rubi
+iráver o `#` na linha de código (sem o resto da sintaxe necessária
+para interpolação de string) e não interpretará nada que se segue. Você pode
+use `#` desta forma para adicionar comentários ou esclarecimentos ao seu código, seja em
+no final de uma linha de código, conforme mostrado acima, ou em uma linha isolada. Você pode
+também use-o para "comentar" o código (colocando `#` no início de cada linha)
+se você quiser impedir que o código seja executado temporariamente. Isso pode ser útil
+durante a depuração.
+
+A primeira linha no trecho de código acima, `def greeting`, é chamada de método
+assinatura, define as propriedades básicas do método, incluindo o nome do
+o método, `greeting`.
+
+Depois de 'abrir' uma definição de método com a palavra-chave `def`, todas as linhas subseqüentes
+em seu programa são considerados o corpo do método, o procedimento ou código real
+que seu método será executado toda vez que for chamado.
+
+Você deve terminar cada abertura `def` de um método com um `end` correspondente em
+para fechar o corpo do método. Se você não `terminar` corretamente um método, seu
+programa terá resultados inesperados ou quebrará totalmente por causa de uma sintaxe
+erro. Uma boa prática é definir o método e fechá-lo imediatamente
+antes de programar qualquer coisa no método.
 
 ```ruby
 def greeting
@@ -180,6 +256,16 @@ before adding any other complexity.
 > `def`, aligning the opening and closing of the method visually. Then you can
 > easily define the body of the method and never worry about forgetting to `end`
 > the method.
+...............................................................................................
+Aqui configuramos a estrutura do método primeiro, garantindo uma finalização adequada
+antes de adicionar qualquer outra complexidade.
+
+> **Aparte**: Também é uma ótima prática indentar os métodos corretamente. o corpo de
+> um método deve ser recuado dois (2) espaços, colocando-o visualmente dentro do
+> método. Quando você `end` o método, volte para o mesmo recuo do
+> `def`, alinhando visualmente a abertura e fechamento do método. Então você pode
+> defina facilmente o corpo do método e nunca se preocupe em esquecer de `end`
+> o método.
 
 ```ruby
 def greeting
@@ -191,6 +277,9 @@ end
 
 Once you define a method, you can execute the method whenever you want by using
 the method name in your code.
+...............................................................................................
+Depois de definir um método, você pode executá-lo quando quiser usando
+o nome do método em seu código.
 
 ```ruby
 def greeting
@@ -211,6 +300,14 @@ greeting # Executing the method again
 Let's try making a method we can use over and over. Make a new file called
 `greeting.rb` (you can use: `touch greeting.rb` from your terminal). Put the
 following code in it:
+................................................................................................
+> **Nota**: Se você estiver usando o IRB até agora, saia dele antes de continuar.
+> A parte restante desta lição envolve comandos bash que você precisará
+> entre no terminal.
+
+Vamos tentar criar um método que possamos usar repetidamente. Crie um novo arquivo chamado
+`greeting.rb` (você pode usar: `touch greeting.rb` do seu terminal). Coloque o
+seguinte código nele:
 
 File: `greeting.rb`
 
@@ -231,6 +328,11 @@ You'll notice that when you run your program, nothing happens. Your program
 successfully defined the method but it never executed it. Just because you built
 a machine doesn't mean that you turned it on. Update your `greeting.rb` to
 entirely read:
+................................................................................................
+Você notará que, ao executar seu programa, nada acontece. seu programa
+definiu o método com sucesso, mas nunca o executou. Só porque você construiu
+uma máquina não significa que você a ligou. Atualize seu `greeting.rb` para
+totalmente lido:
 
 File: `greeting.rb`
 
@@ -243,7 +345,8 @@ greeting
 ```
 
 Save your file and run it with `ruby greeting.rb`. You'll see:
-
+................................................................................................
+Salve seu arquivo e execute-o com `ruby greeting.rb`. Você vai ver:
 ```bash
 $ ruby greeting.rb
 Hello World
@@ -252,7 +355,9 @@ $
 
 Now your program actually executed the program. Update the code again to
 entirely read:
-
+................................................................................................
+Agora seu programa realmente executou o programa. Atualize o código novamente para
+totalmente lido:
 File: `greeting.rb`
 
 ```ruby
@@ -291,3 +396,12 @@ them. For example, if a method is named 'greeting', rubyists will often refer to
 it as `#greeting`. This is so that other rubyists can instantly recognize it as 
 a method, as opposed to a variable or a bareword or a class. But remember that 
 when you write it in your code, it should be `greeting` and not `#greeting`.
+................................................................................................
+Vamos terminar falando brevemente sobre um uso adicional de `#`. Os programadores adoram
+convenções ou regras acordadas que os ajudam a conversar uns com os outros sobre código.
+Uma convenção de sintaxe comum para métodos Ruby é prefaciá-los com um `#`, e
+nas lições subseqüentes, você pode ver os nomes dos métodos escritos com um `#` na frente de
+eles. Por exemplo, se um método é chamado de 'saudação', os rubistas geralmente se referem a
+como `#saudação`. Isso é para que outros rubiistas possam reconhecê-lo instantaneamente como
+um método, em oposição a uma variável ou uma palavra simples ou uma classe. Mas lembre-se disso
+quando você escreve em seu código, deve ser `greeting` e não `#greeting`.
